@@ -17,9 +17,9 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-        <div class="collapse navbar-collapse col-sm-3 col-md-3 col-lg-3" id="navbarSupportedContent">
-          <button class="btn btn-success" type="submit" data-bs-toggle="modal" data-bs-target="#newPostModal">Create a new post</button>
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse col-sm-4 col-md-4 col-lg-4" id="navbarSupportedContent">
+          <button class="btn btn-success col-sm-3 col-md-3 col-lg-3" type="submit" data-bs-toggle="modal" data-bs-target="#newPostModal">Create a new post</button>
+          <ul class="navbar-nav col-sm-1 col-md-1 col-lg-1">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle bg-secondary rounded mx-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></a> 
               <ul class="dropdown-menu">
@@ -59,119 +59,128 @@
       </div>
     </div>
 
-    <div class="container text-center">
-      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#multiPostCollapse" aria-expanded="false" aria-controls="multiPostCollapse"><i class="fa-solid fa-table-cells"></i></button>
-      <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#reelPostCollapse" aria-expanded="false" aria-controls="reelPostCollapse"><i class="fa-solid fa-square"></i></button>
-      <!-- POST GRID -->
-      <div class="collapse show" id="multiPostCollapse" data-parent=".container">
-        <div class="row g-2 my-2">
-          <div class="col-sm-4 col-md-4 col-lg-4">
-            <div class="ratio ratio-4x3">
-              <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/STEBBZPVVZGGFG3QMMLWPPXZNE.jpg" class="img-fluid">
-            </div>
+    <div class="container text-center my-2">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item m-auto d-flex" role="presentation">
+          <button class="nav-link text-dark active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="false"><i class="fa-solid fa-table-cells"></i></button>
+          <button class="nav-link text-dark" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+
+        <!-- POST GRID -->
+        <div class="tab-pane fade show active p-3" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <div class="row g-2 my-2">
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="ratio ratio-4x3">
+                  <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/STEBBZPVVZGGFG3QMMLWPPXZNE.jpg" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="ratio ratio-4x3">
+                  <img src="https://media.gettyimages.com/id/56034481/photo/barcelona-spain-ronaldinho-of-fc-barcelona-celebrates-his-goal-during-the-la-liga-match-between.jpg?s=612x612&w=0&k=20&c=7DtSyXTH5MDT5PPH8zh-3-NpWbGwXnYqXQBvQktVee4=" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="ratio ratio-4x3">
+                  <img src="https://media.gettyimages.com/id/1316985020/photo/barcelona-spain-lionel-messi-of-fc-barcelona-looks-on-during-the-la-liga-santander-match.jpg?s=612x612&w=0&k=20&c=SOVj73H_f3NpfKrm50nBtUcSOP5xB8L9aQyGNAVMCfw=" class="img-fluid">
+                </div>
+              </div>
           </div>
-          <div class="col-sm-4 col-md-4 col-lg-4">
-            <div class="ratio ratio-4x3">
-              <img src="https://media.gettyimages.com/id/56034481/photo/barcelona-spain-ronaldinho-of-fc-barcelona-celebrates-his-goal-during-the-la-liga-match-between.jpg?s=612x612&w=0&k=20&c=7DtSyXTH5MDT5PPH8zh-3-NpWbGwXnYqXQBvQktVee4=" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-4">
-            <div class="ratio ratio-4x3">
-              <img src="https://media.gettyimages.com/id/1316985020/photo/barcelona-spain-lionel-messi-of-fc-barcelona-looks-on-during-the-la-liga-santander-match.jpg?s=612x612&w=0&k=20&c=SOVj73H_f3NpfKrm50nBtUcSOP5xB8L9aQyGNAVMCfw=" class="img-fluid">
-            </div>
+          <div class="row g-2 my-1">
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="ratio ratio-4x3">
+                  <img src="https://fotografias.larazon.es/clipping/cmsimages02/2024/10/26/402191E9-02A3-45F7-964A-03CA048E4E5D/58.jpg?crop=6679,3787,x0,y335&width=1000&height=567&optimize=high&format=webply" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="ratio ratio-4x3">
+                  <img src="https://fotografias.larazon.es/clipping/cmsimages02/2024/10/26/F338A3B6-08C0-4A97-86FF-DAE854438EA2/58.jpg?crop=5580,3164,x0,y278&width=1000&height=567&optimize=high&format=webply" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="ratio ratio-4x3">
+                  <img src="https://img.asmedia.epimg.net/resizer/v2/P4HZ2R2N5R6BXZS5NYYO5WR6EE.jpg?auth=10b093d923767bc29001cec96f4dc5638a0e82a2eda3f47fbad0d9285617ba1e&width=644&height=362&focal=1458,309" class="img-fluid">
+                </div>
+              </div>
           </div>
         </div>
-        <div class="row g-2 my-1">
-          <div class="col-sm-4 col-md-4 col-lg-4">
-            <div class="ratio ratio-4x3">
-              <img src="https://fotografias.larazon.es/clipping/cmsimages02/2024/10/26/402191E9-02A3-45F7-964A-03CA048E4E5D/58.jpg?crop=6679,3787,x0,y335&width=1000&height=567&optimize=high&format=webply" class="img-fluid">
-            </div>
+
+        <!-- POST FEED -->
+        <div class="tab-pane fade p-3" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="card mb-5 m-auto" style="width: 30rem;">
+              <div class="card-header d-flex justify-content-between">
+                <h5>Primera Imagen</h5>
+                <h7>08/24</h7>
+              </div>
+              <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/STEBBZPVVZGGFG3QMMLWPPXZNE.jpg" class="card-img-top ">
+              <div class="card-body">
+                <p class="card-text"><strong>11111 Likes</strong></p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
           </div>
-          <div class="col-sm-4 col-md-4 col-lg-4">
-            <div class="ratio ratio-4x3">
-              <img src="https://fotografias.larazon.es/clipping/cmsimages02/2024/10/26/F338A3B6-08C0-4A97-86FF-DAE854438EA2/58.jpg?crop=5580,3164,x0,y278&width=1000&height=567&optimize=high&format=webply" class="img-fluid">
-            </div>
+          <div class="card mb-5 m-auto" style="width: 30rem;">
+              <div class="card-header d-flex justify-content-between">
+                <h5>Segunda Imagen</h5>
+                <h7>11/01</h7>
+              </div>
+              <img src="https://media.gettyimages.com/id/56034481/photo/barcelona-spain-ronaldinho-of-fc-barcelona-celebrates-his-goal-during-the-la-liga-match-between.jpg?s=612x612&w=0&k=20&c=7DtSyXTH5MDT5PPH8zh-3-NpWbGwXnYqXQBvQktVee4=" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><strong>7 Likes</strong></p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
           </div>
-          <div class="col-sm-4 col-md-4 col-lg-4">
-            <div class="ratio ratio-4x3">
-              <img src="https://img.asmedia.epimg.net/resizer/v2/P4HZ2R2N5R6BXZS5NYYO5WR6EE.jpg?auth=10b093d923767bc29001cec96f4dc5638a0e82a2eda3f47fbad0d9285617ba1e&width=644&height=362&focal=1458,309" class="img-fluid">
-            </div>
+          <div class="card mb-5 m-auto" style="width: 30rem;">
+              <div class="card-header d-flex justify-content-between">
+                <h5>Tercera Imagen</h5>
+                <h7>12/25</h7>
+              </div>
+              <img src="https://media.gettyimages.com/id/1316985020/photo/barcelona-spain-lionel-messi-of-fc-barcelona-looks-on-during-the-la-liga-santander-match.jpg?s=612x612&w=0&k=20&c=SOVj73H_f3NpfKrm50nBtUcSOP5xB8L9aQyGNAVMCfw=" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><strong>8828287 Likes</strong></p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+          </div>
+          <div class="card mb-5 m-auto" style="width: 30rem;">
+              <div class="card-header d-flex justify-content-between">
+                <h5>Cuarta Imagen</h5>
+                <h7>12/31</h7>
+              </div>
+              <img src="https://fotografias.larazon.es/clipping/cmsimages02/2024/10/26/402191E9-02A3-45F7-964A-03CA048E4E5D/58.jpg?crop=6679,3787,x0,y335&width=1000&height=567&optimize=high&format=webply" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><strong>334522 Likes</strong></p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+          </div>
+          <div class="card mb-5 m-auto" style="width: 30rem;">
+              <div class="card-header d-flex justify-content-between">
+                <h5>Quinta Imagen</h5>
+                <h7>01/06</h7>
+              </div>
+              <img src="https://fotografias.larazon.es/clipping/cmsimages02/2024/10/26/F338A3B6-08C0-4A97-86FF-DAE854438EA2/58.jpg?crop=5580,3164,x0,y278&width=1000&height=567&optimize=high&format=webply" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><strong>7647 Likes</strong></p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+          </div>
+          <div class="card mb-5 m-auto" style="width: 30rem;">
+              <div class="card-header d-flex justify-content-between">
+                <h5>Sexta Imagen</h5>
+                <h7>02/14</h7>
+              </div>
+              <img src="https://img.asmedia.epimg.net/resizer/v2/P4HZ2R2N5R6BXZS5NYYO5WR6EE.jpg?auth=10b093d923767bc29001cec96f4dc5638a0e82a2eda3f47fbad0d9285617ba1e&width=644&height=362&focal=1458,309" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text"><strong>21342 Likes</strong></p>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
           </div>
         </div>
       </div>
-      <!-- POST FEED -->
-      <div class="collapse" id="reelPostCollapse" data-parent=".container">
-        <div class="card mb-5 m-auto" style="width: 30rem;">
-          <div class="card-header d-flex justify-content-between">
-            <h5>Primera Imagen</h5>
-            <h7>08/24</h7>
-          </div>
-          <img src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/STEBBZPVVZGGFG3QMMLWPPXZNE.jpg" class="card-img-top ">
-          <div class="card-body">
-            <p class="card-text"><strong>11111 Likes</strong></p>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-        <div class="card mb-5 m-auto" style="width: 30rem;">
-          <div class="card-header d-flex justify-content-between">
-            <h5>Segunda Imagen</h5>
-            <h7>11/01</h7>
-          </div>
-          <img src="https://media.gettyimages.com/id/56034481/photo/barcelona-spain-ronaldinho-of-fc-barcelona-celebrates-his-goal-during-the-la-liga-match-between.jpg?s=612x612&w=0&k=20&c=7DtSyXTH5MDT5PPH8zh-3-NpWbGwXnYqXQBvQktVee4=" class="card-img-top">
-          <div class="card-body">
-            <p class="card-text"><strong>7 Likes</strong></p>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-        <div class="card mb-5 m-auto" style="width: 30rem;">
-          <div class="card-header d-flex justify-content-between">
-            <h5>Tercera Imagen</h5>
-            <h7>12/25</h7>
-          </div>
-          <img src="https://media.gettyimages.com/id/1316985020/photo/barcelona-spain-lionel-messi-of-fc-barcelona-looks-on-during-the-la-liga-santander-match.jpg?s=612x612&w=0&k=20&c=SOVj73H_f3NpfKrm50nBtUcSOP5xB8L9aQyGNAVMCfw=" class="card-img-top">
-          <div class="card-body">
-            <p class="card-text"><strong>8828287 Likes</strong></p>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-        <div class="card mb-5 m-auto" style="width: 30rem;">
-          <div class="card-header d-flex justify-content-between">
-            <h5>Cuarta Imagen</h5>
-            <h7>12/31</h7>
-          </div>
-          <img src="https://fotografias.larazon.es/clipping/cmsimages02/2024/10/26/402191E9-02A3-45F7-964A-03CA048E4E5D/58.jpg?crop=6679,3787,x0,y335&width=1000&height=567&optimize=high&format=webply" class="card-img-top">
-          <div class="card-body">
-            <p class="card-text"><strong>334522 Likes</strong></p>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-        <div class="card mb-5 m-auto" style="width: 30rem;">
-          <div class="card-header d-flex justify-content-between">
-            <h5>Quinta Imagen</h5>
-            <h7>01/06</h7>
-          </div>
-          <img src="https://fotografias.larazon.es/clipping/cmsimages02/2024/10/26/F338A3B6-08C0-4A97-86FF-DAE854438EA2/58.jpg?crop=5580,3164,x0,y278&width=1000&height=567&optimize=high&format=webply" class="card-img-top">
-          <div class="card-body">
-            <p class="card-text"><strong>7647 Likes</strong></p>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-        <div class="card mb-5 m-auto" style="width: 30rem;">
-          <div class="card-header d-flex justify-content-between">
-            <h5>Sexta Imagen</h5>
-            <h7>02/14</h7>
-          </div>
-          <img src="https://img.asmedia.epimg.net/resizer/v2/P4HZ2R2N5R6BXZS5NYYO5WR6EE.jpg?auth=10b093d923767bc29001cec96f4dc5638a0e82a2eda3f47fbad0d9285617ba1e&width=644&height=362&focal=1458,309" class="card-img-top">
-          <div class="card-body">
-            <p class="card-text"><strong>21342 Likes</strong></p>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
+      
     </div>
 
   <script src="https://kit.fontawesome.com/99651c8c5d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
